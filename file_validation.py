@@ -7,9 +7,7 @@ s3_client = boto3.client('s3')
 
 def lambda_handler(event, context):
 
-    print(event)
-    bucket = event['Records'][0]['s3']['bucket']['name']
-    key = event['Records'][0]['s3']['object']['key']
+
 
 
     download_path = '/tmp/{}'.format(key)
