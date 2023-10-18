@@ -3,8 +3,7 @@ import json
 import pandas as pd
 
 s3_client = boto3.client('s3')
-sns_client = boto3.client('sns')
-sqs_client = boto3.client('sqs')
+
 
 def lambda_handler(event, context):
 
